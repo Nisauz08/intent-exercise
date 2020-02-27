@@ -109,8 +109,8 @@ public class RegisterActivity extends AppCompatActivity {
             i.putExtra(HOMEPAGE_KEY, homepage);
             i.putExtra(ABOUT_KEY, about);
 
-            if (avatarImage !=null){
-                i.putExtra(AVATARIMAGE_KEY, avatarImage.toString());
+            if (image !=null){
+                i.putExtra(AVATARIMAGE_KEY, image.toString());
                 try{
                     startActivity(i);
                 } catch (Exception ex){
@@ -120,7 +120,7 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             } else {
                 Toast.makeText(this,"Please insert your image", Toast.LENGTH_SHORT).show();
-                handleOk(view);
+                changeAvatar(view);
             }
         }
     }
