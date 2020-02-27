@@ -36,6 +36,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 />
 
+
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="60dp"
@@ -43,6 +44,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/image_profile"
                 app:layout_constraintEnd_toEndOf="@+id/image_profile"
                 app:srcCompat="@drawable/edit_icon"
+                android:onClick="changeAvatar"
                 />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -185,6 +187,7 @@
         android:background="@drawable/btn_red_large"
         android:text="@android:string/ok"
         android:textColor="@android:color/white"
+        android:onClick="handleOk"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

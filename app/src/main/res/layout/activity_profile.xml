@@ -165,18 +165,18 @@
 
         <TextView
             android:id="@+id/title_homepage"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="118dp"
+            android:layout_height="40dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/futura_pt_demibold"
-            android:text="Email"
+            android:text="Homepage"
             android:textAlignment="textStart"
             android:textSize="20sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/separator3"
-            />
+            app:layout_constraintTop_toBottomOf="@id/separator3" />
 
         <TextView
             android:id="@+id/label_homepage"
@@ -217,6 +217,7 @@
             android:text="Visit My Homepage"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
+            android:onClick="HandleHomePage"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/separator4"
